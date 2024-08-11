@@ -1,0 +1,36 @@
+@import url('./globals.css');
+
+section#formacao {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+section#formacao h1.title {
+  color: var(--onBackground);
+}
+
+section#formacao strong.instituicao {
+  color: var(--primary);
+}
+
+section#formacao p.section-description {
+  text-align: right;
+}
+
+ul#itens-formacao {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+ul#itens-formacao li {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  section#formacao h2, p {
+    max-width: 30rem;
+  }
+}

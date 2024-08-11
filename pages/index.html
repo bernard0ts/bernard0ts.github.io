@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho de fundamentos de programação web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/utils.css" />
+    <link rel="stylesheet" href="/styles/sectionSobre.css" />
+    <link rel="stylesheet" href="/styles/sectionFormacao.css" />
+    <link rel="stylesheet" href="/styles/sectionPortfolio.css" />
+    <link rel="stylesheet" href="/styles/sectionContato.css" />
+  </head>
+  <body>
+    <div id="navContainer">
+      <nav>
+        <ul>
+          <li><a class="navLink" href="#sobre">Sobre</a></li>
+          <li><a class="navLink" href="#formacao">Formação</a></li>
+          <li><a class="navLink" href="#portfolio">Portfólio</a></li>
+          <li><a class="navLink" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header id="header-medium-screens">
+      <div id="menuTrigger"><span></span><span></span><span></span></div>
+    </header>
+    <header id="header-large-screens">
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="sobre">
+        <img
+          id="profile-pic"
+          src="/public/profile.jpg"
+          alt="minha foto usando camiseta branca social e blazer azul escuro, cabelo curto"
+        />
+        <h2 class="title">Olá, seja bem vindo!</h2>
+        <p class="section-description">
+          Me chamo Calvin, estou cursando Análise e Desenvolvimento de Sistemas
+          e tenho pouco mais de 2 anos e meio com experiência em desenvolvimento
+          web e mobile.
+        </p>
+      </section>
+      <hr class="section-divider" />
+      <section id="formacao">
+        <h2 class="title">Minha formação</h2>
+        <p class="section-description">
+          Iniciei meus estudos na TI em 2014, onde comecei minha primeira
+          faculdade.
+        </p>
+        <ul id="itens-formacao">
+          <li>
+            <strong class="instituicao">Uri -</strong> Bacharelado em sistemas
+            da informação 2014 ~ 2018 (incompleto)
+          </li>
+          <li>
+            <strong class="instituicao">Uninter -</strong> Tecnólogo em Análise
+            e desenvolvimento de sistemas 2024 ~ 2025 (cursando)
+          </li>
+        </ul>
+      </section>
+      <hr class="section-divider" />
+      <section id="portfolio">
+        <h2 class="title">Meus projetos</h2>
+        <p class="section-description">
+          Estou sempre buscando novos conhecimentos e praticando eles com
+          projetos pessoais onde tento criar idéias para explora-los da melhor
+          forma. Tudo isso em meu <span>github</span>.
+        </p>
+        <button id="acessar-github">
+          <i class="fab fa-github"></i> Conhecer projetos
+        </button>
+      </section>
+      <hr class="section-divider" />
+      <section id="contato">
+        <h2 class="title">Contato</h2>
+        <p class="section-description">
+          Sinta-se à vontade para entrar em contato comigo
+        </p>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button id="enviar-formulario" type="submit">
+              <i class="fas fa-envelope"></i> Enviar mensagem
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/logic/index.js"></script>
+  </body>
+</html>

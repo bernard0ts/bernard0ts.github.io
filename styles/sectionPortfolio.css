@@ -1,0 +1,33 @@
+@import url('./globals.css');
+
+section#portfolio {
+  background-color: var(--primaryContainer);
+}
+
+section#portfolio button#acessar-github {
+  background-color: var(--primary);
+  padding: 0.7rem 1.2rem;
+  color: var(--onPrimary);
+  font-weight: 700;
+  border-radius: 0.25rem;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section#portfolio button#acessar-github i {
+  color: var(--onPrimary);
+  font-size: medium;
+}
+
+section#porfolio p span {
+  color: var(--primary);  
+}
+
+@media (min-width: 1024px) {
+  section#portfolio h2, p, button {
+    max-width: 30rem;
+  }
+}

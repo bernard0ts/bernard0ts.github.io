@@ -1,0 +1,17 @@
+@import url('./globals.css');
+
+section#sobre {  
+  background-color: var(--primaryContainer);
+}
+
+#profile-pic {
+  width: 8rem;
+  margin-bottom: 2rem;
+  clip-path: circle(); 
+}
+
+@media (min-width: 1024px) {
+  section#sobre h2, p {
+    max-width: 30rem;
+  }
+}
