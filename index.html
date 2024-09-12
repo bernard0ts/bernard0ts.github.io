@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt">
+  <!-- Declaração de tipo de documento e idioma -->
+
   <head>
     <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajusta a visualização para dispositivos móveis -->
     <title>Bernardo Teixeira da Silva</title>
+    <!-- Título da página -->
+
+    <!-- Conexão antecipada para otimizar carregamento de fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Importa a fonte Roboto -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Importa ícones do Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+    <!-- Links para arquivos de estilos CSS -->
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/utils.css" />
     <link rel="stylesheet" href="./styles/sectionSobre.css" />
@@ -21,7 +34,11 @@
     <link rel="stylesheet" href="./styles/sectionPortfolio.css" />
     <link rel="stylesheet" href="./styles/sectionContato.css" />
   </head>
+
   <body>
+    <!-- Estrutura da página -->
+
+    <!-- Menu de navegação para links de seções -->
     <div id="navContainer">
       <nav>
         <ul>
@@ -32,9 +49,13 @@
         </ul>
       </nav>
     </div>
+
+    <!-- Cabeçalho para telas médias -->
     <header id="header-medium-screens">
       <div id="menuTrigger"><span></span><span></span><span></span></div>
     </header>
+
+    <!-- Cabeçalho para telas grandes -->
     <header id="header-large-screens">
       <nav>
         <ul>
@@ -45,14 +66,20 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
+      <!-- Seção sobre mim -->
       <section id="sobre">
         <h2 class="title">Sobre mim</h2>
         <p class="section-description">
           Meu nome é Bernardo Teixeira da Silva, tenho 18 anos e moro em Jaguarão, cidade do Rio Grande do Sul. Atualmente trabalho no setor comercial e curso Análise e Desenvolvimento de Sistemas na UNINTER, modalidade EAD. Entre dezembro de 2022 e agosto de 2023, exerci a função de auxiliar em desenvolvimento de aplicações e sistemas, como estágiario na empresa Érico Dias/MyCustomApp. Nas horas vagas gosto de produzir música, jogar video game, sempre buscando algo novo.
         </p>
       </section>
+
       <hr class="section-divider" />
+
+      <!-- Seção de formação -->
       <section id="formacao">
         <h2 class="title">Formação</h2>
         <ul id="itens-formacao">
@@ -60,26 +87,34 @@
             <strong class="instituicao">Projeto Olá Mundo -</strong> Curso de Programação Básica
           </li>
           <li>
-            <strong class="instituicao">Udemy -</strong> Curso de Lógica de Programação, formação oferecida no tempo de estágio feito em empresa Érico Dias/MyCustomApp
+            <strong class="instituicao">Udemy -</strong> Curso de Lógica de Programação, formação oferecida no tempo de estágio feito em empresa Érico Dias/MyCustomApp.
           </li>
           <li>
-            <strong class="instituicao">Udemy -</strong> Curso de Ruby on Rails básico, formação oferecida no tempo de estágio feito em empresa Érico Dias/MyCustomApp
+            <strong class="instituicao">Udemy -</strong> Curso de Ruby on Rails básico, formação oferecida no tempo de estágio feito em empresa Érico Dias/MyCustomApp.
           </li>
         </ul>
       </section>
+
       <hr class="section-divider" />
+
+      <!-- Seção de portfólio -->
       <section id="portfolio">
         <h2 class="title">Portfólio</h2>
         <p class="section-description">
-          No momento não possuo nenhum projeto ou trabalho pessoal.
+          No momento não possuo nenhum projeto ou portfólio pessoal.
         </p>
       </section>
+
       <hr class="section-divider" />
+
+      <!-- Seção de contato -->
       <section id="contato">
         <h2 class="title">Contato</h2>
         <p class="section-description">
           Entre em contato comigo!
         </p>
+
+        <!-- Formulário de contato -->
         <form action="#" method="post">
           <div class="form-group">
             <label for="name">Nome:</label>
@@ -101,6 +136,8 @@
         </form>
       </section>
     </main>
+
+    <!-- Importa o script -->
     <script src="/logic/index.js"></script>
   </body>
 </html>
