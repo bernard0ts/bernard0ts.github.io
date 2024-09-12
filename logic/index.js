@@ -1,7 +1,6 @@
 const triggerMenu = document.querySelector('#menuTrigger')
 const navContainer = document.querySelector('#navContainer')
 const navLinks = document.querySelectorAll('.navLink')
-const buttonGithub = document.querySelector('#acessar-github')
 
 triggerMenu.addEventListener('click', () => {
     menuTrigger.classList.toggle('show');
@@ -16,7 +15,3 @@ navLinks.forEach(link => {
         navContainer.classList.add('fade');
     });
 });
-
-buttonGithub.addEventListener('click', () => {
-    window.open('https://github.com/calvinsteixeira', '_blank');
-})

@@ -1,10 +1,10 @@
 :root {
-  --background: rgb(44, 44, 44);
+  --background: rgb(15, 5, 29);
   --onBackground: rgb(255, 255, 255);
-  --primary: rgb(56, 255, 169);
+  --primary: rgb(130, 76, 240);
   --onPrimary: rgb(0, 0, 0);
-  --primaryContainer: rgb(34, 34, 34);
-  --borderColor: rgba(255, 255, 255, 0.233);
+  --primaryContainer: rgb(28, 22, 41);
+  --borderColor: rgba(61, 31, 85, 0.233);
 }
 
 html {
@@ -16,9 +16,8 @@ html {
   text-decoration: none;
   margin: 0;
   list-style-type: none;
-  font-family: Roboto;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: var(--onBackground);
-  line-height: 1.4rem;
 }
 
 main {
@@ -165,7 +164,7 @@ header#header-large-screens nav ul li a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #333;
+  background-color: #560598;
   border-radius: 6px;
 }
 
